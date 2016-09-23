@@ -3,12 +3,12 @@
 
 
 
-.build/uno/src/sketch.cpp : src/sketch.ino
+.build/uno/src/mpu9250_arduino.cpp : src/mpu9250_arduino.ino
 	@mkdir -p .build/uno/src
-	@echo [93msrc/sketch.ino[0m
+	@echo [93msrc/mpu9250_arduino.ino[0m
 	@/usr/local/bin/ino preproc  -o $@ $^
 
 
-all : .build/uno/src/sketch.cpp
+all : .build/uno/src/mpu9250_arduino.cpp
 	@true
 
